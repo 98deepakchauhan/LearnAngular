@@ -1,0 +1,30 @@
+<div class="container">
+  <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a routerLink="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        MyShop
+      </a>
+    </div>
+
+    <ul class="nav col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a routerLink="/shopping-cart" class="nav-link px-2">Shopping Cart</a></li>
+    </ul>
+
+    <div ngbDropdown class="dropdown">
+      <button ngbDropdownToggle class="btn dropdown-toggle" id="dropdown-menu" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        UserName
+      </button>
+      <ul ngbDropdownMenu class="dropdown-menu">
+        <li><a class="dropdown-item" routerLink="/my-orders">My Order</a></li>
+        <li><a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a></li>
+        <li><a class="dropdown-item" routerLink="admin/products">Manage Products</a></li>
+        <li><a class="dropdown-item">LogOut</a></li>
+      </ul>
+    </div>
+
+    <ul class="nav col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a routerLink="/login" class="nav-link px-2">Login</a></li>
+    </ul>
+  </header>
+</div>
